@@ -8,6 +8,16 @@ class Program
         Challenge_two two = new Challenge_two();
         Challenge_three three = new Challenge_three();
 
+        one.PrintNumbers();
+        one.PrintStrings(["hello", "there", "array"]);
+        one.CheckIfNumberIsPositiveOrNegative(0);
+
+        two.Fibonacci(8);
+        two.GuessNumber();
+        two.CheckIfNumberIsEvenOrOdd(2, 2);
+        three.FizzBuzz();
+        three.ReverseString("Hello");
+
 
         // validate some methods
         void ValidateRecursiveFactorial()

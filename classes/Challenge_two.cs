@@ -6,10 +6,16 @@ public class Challenge_two
         int? guess = 0;
         while (guess != secret)
         {
-            Console.WriteLine("Guess the secret number: ");
+            Console.WriteLine("Guess the secret number:");
             guess = int.Parse(Console.ReadLine());
-            // Todo: Implement the correct conditionals inside the while loop.
-            break;
+            if (guess == secret)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong number, try again.");
+            }
         }
     }
 
@@ -17,6 +23,13 @@ public class Challenge_two
     {
         int a = 0, b = 1, c;
         Console.WriteLine($"{a} + {b} + ");
+        for (int i = 2; i < n; i++)
+        {
+            c = a + b;
+            Console.Write(c + " ");
+            a = b;
+            b = c;
+        }
         // Todo: Write out the Fibonacci sequence, tips: use a for loop.
         // c = a + b;
         // a = b;
@@ -28,6 +41,13 @@ public class Challenge_two
         // Todo: Check if a number is even or odd
         // if the number is even, write out "even"
         // if the number is odd, write out "odd"
-        Console.WriteLine("");
+        if (a % 2 == 0 && b % 2 == 0)
+        {
+            Console.WriteLine("Number is even");
+        }
+        else
+        {
+            Console.WriteLine("Number is odd!");
+        }
     }
 }
