@@ -2,7 +2,7 @@ public class Challenge_two
 {
     public void GuessNumber()
     {
-        int? secret = 0; // Assign the secret value
+        int? secret = 32; // Assign the secret value
         int? guess = 0;
         while (guess != secret)
         {
